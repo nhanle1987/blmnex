@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: 'demo2',
+  distDir: 'demo',
   reactStrictMode: true,
   output: "export",
-  basePath: '/blmnex/demo2',
+  basePath: '/blmnex/demo',
 };
 
 export default nextConfig;
