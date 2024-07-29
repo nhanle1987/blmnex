@@ -4,6 +4,9 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   basePath: '/blmnex/demo',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
