@@ -3,7 +3,7 @@ const nextConfig = {
   distDir: 'demo',
   reactStrictMode: true,
   output: "export",
-  basePath: '/blmnex/build2',
+  basePath: '/blmnex/demo',
 };
 
 export default nextConfig;
