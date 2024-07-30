@@ -9,12 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
+    "@mui/icons-material": "file:../../icons-material-5.10.2.tgz",
+    "@mui/material": "^5.16.5",
+    "@mui/material-nextjs": "^5.16.4",
+    "@mui/styles": "^5.16.5",
+    "classnames": "2.5.1",
+    "mui-datatables": "3.7.4",
+    "next": "14.2.5",
+    "react": "18",
+    "react-dom": "18",
+    "react-no-ssr": "^1.1.0",
+    "react-router-dom": "^6.25.1",
+    "styled-component": "2.8.0",
+    "tinycolor2": "^1.6.0",
+    "valtio": "1.13.2"
   },
   "devDependencies": {
-    "eslint": "^8",
+    "eslint": "8",
     "eslint-config-next": "14.2.5"
   }
 }
