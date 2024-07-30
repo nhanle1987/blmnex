@@ -1,12 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const isProd = process.env.NODE_ENV === 'production'
+console.log(process.env.NODE_ENV);
+
+const nextConfig = isProd ? {
   distDir: 'demo',
   reactStrictMode: true,
   output: "export",
   basePath: '/blmnex/demo',
-  images: {
-    unoptimized: true,
-  },
-};
+  assetPrefix: '/blmnex/demo/',
+  // images: {
+  //   unoptimized: true,
+  // },
+} : {};
 
 export default nextConfig;
