@@ -1,6 +1,3 @@
-'use client'
-
-import { _localStorage } from "@/utils/client";
 import React from "react";
 
 var UserStateContext = React.createContext();
@@ -20,7 +17,7 @@ function userReducer(state, action) {
 
 function UserProvider({ children }) {
   var [state, dispatch] = React.useReducer(userReducer, {
-    isAuthenticated: !!_localStorage.getItem("id_token"),
+    isAuthenticated: !!localStorage.getItem("id_token"),
   });
 
   return (
@@ -58,12 +55,12 @@ function loginUser(dispatch, login, password, history, setIsLoading, setError) {
 
   if (!!login && !!password) {
     setTimeout(() => {
-      _localStorage.setItem('id_token', 1)
+      localStorage.setItem('id_token', 1)
       setError(null)
       setIsLoading(false)
       dispatch({ type: 'LOGIN_SUCCESS' })
 
-      history.push('/app/dashboard')
+      history.push('/app/trang-chu')
     }, 2000);
   } else {
     dispatch({ type: "LOGIN_FAILURE" });
@@ -73,7 +70,7 @@ function loginUser(dispatch, login, password, history, setIsLoading, setError) {
 }
 
 function signOut(dispatch, history) {
-  _localStorage.removeItem("id_token");
+  localStorage.removeItem("id_token");
   dispatch({ type: "SIGN_OUT_SUCCESS" });
   history.push("/login");
 }

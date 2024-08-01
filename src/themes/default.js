@@ -65,6 +65,7 @@ const defaultTheme = {
     background: {
       default: "#F6F7FF",
       light: "#F3F5FF",
+      white: "#FFFFFF",
     },
   },
   customShadows: {
